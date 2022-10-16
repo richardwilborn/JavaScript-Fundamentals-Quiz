@@ -67,7 +67,7 @@ function nextQuestion() {
 //checks answer based on current question and updates the user score
 function checkAnswer(answer) {
     if (questions[currentQ].answer == questions[currentQ].choices[answer.id]) {
-        score += 20;
+        score += 5;
         displayMessage("Correct!");
     }
     else {
