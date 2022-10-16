@@ -1,3 +1,11 @@
+//variable to start time
+let secondsLeft = 60;
+
+//element that displays the time
+let timer = document.getElementById("timer");
+
+
+
 (function(){
   function buildQuiz(){
     // variable to store the HTML output
@@ -74,42 +82,20 @@
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
 
-//quiz questions and answers
-  const myQuestions = [
-    {
-      question: "Is a variable named 'apple' same as 'Apple' in javascript?",
-      answers: {
-        a: "Yes",
-        b: "No",
-        c: "Only when we use 'strict'",
-        d: "None of the above"
-      },
-      correctAnswer: "b"
-    },
-
-    {
-      question: "Inside which HTML element do we put the JavaScript <...>?",
-      answers: {
-        a: "script",
-        b: "javascript",
-        c: "js"
-      },
-      correctAnswer: "a"
-    },
-
-    {
-      question: "Where is the correct place to insert a JavaScript?",
-      answers: {
-        a: "The <body> section",
-        b: "The <head> section",
-        c: "Both the <head> section and the <body> section are correct"
-      },
-      correctAnswer: "c"
-    }
-  ];
-
   // Kick things off
   buildQuiz();
+
+  //Stopwatch
+var myTimer;
+function clock() {
+    myTimer = setInterval(myClock, 1000);
+    function myClock() {
+        document.getElementById("timer").innerHTML = c--;
+        if (c == 0) {
+        clearInterval(myTimer);
+       }
+    }
+}
 
   // Event listeners
   submitButton.addEventListener('click', showResults);

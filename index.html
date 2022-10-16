@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
+  <script src="assets/questions.js"></script>
   <link rel="stylesheet" href="styles.css">
   <title>JavaScript Fundamentals Quiz</title>
 </head>
+
 <body>
   <h1>JavaScript Fundamentals Quiz</h1>
 
@@ -15,9 +17,30 @@
     <p id="fulltime"></p>
   </section>
   
-  <div id="quiz"></div>
+  <div class="container" id="quiz">
+    <h1 class="h1 mb-4" id="question"></h1>
+    <div class="container" id="answers">
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="0"></button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="1"></button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="2"></button>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-left" id="3"></button>
+        </div>
+    </div>
+  </div>
   <button id="submit">Submit Quiz</button>
   <div id="results"></div>
-  <script src="script.js"></script>
+
+  <!--JavaScript-->
+  <script src="assets/script.js"></script>
+  <script src="assets/questions.js"></script>
+
 </body>
+
 </html>
