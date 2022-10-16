@@ -71,7 +71,7 @@ function checkAnswer(answer) {
         displayMessage("Correct!");
     }
     else {
-        secondsElapsed += 10;
+        secondsElapsed += 15;
         displayMessage("Wrong...");
     }
 }
