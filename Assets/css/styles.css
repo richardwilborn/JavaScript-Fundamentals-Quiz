@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#welcome, #quiz, #inputScore, #highScores {
+	width: 70%;
+}
+
+#quiz, #inputScore, #highScores {
+	display: none;
+}
+
+.jumbotron {
+	background-color: lightgray;
+}
